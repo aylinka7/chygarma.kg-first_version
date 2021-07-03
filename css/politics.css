@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Underdog&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Underdog;
+    font-weight: normal;
+    color: #0A0F35;
+}
+
+.header_block {
+    width: 100%;
+    height: 100px;
+    background: rgba(221, 171, 95, 1);
+    padding: 15px 7%;
+}
+
+.title {
+    font-size: 38px;
+    margin-left: 7%;
+    margin-top: 70px;
+}
+
+.text {
+    margin-left: 7%;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+footer {
+    width: 100%;
+    height: 460px;
+    background: rgba(221, 171, 95, 1);
+    margin-top: 80vh;
+}
+
+@media(max-width: 768px) {
+    .title {
+        font-size: 28px;
+    }
+    .text {
+        font-size: 16px;
+    }
+}

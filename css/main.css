@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Underdog&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Underdog;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    padding: 0 7%;
+}
+
+.header_block {
+    width: 100%;
+    height: 100px;
+    background: rgba(221, 171, 95, 1);
+    padding: 15px 7%;
+}
+
+header {
+    position: relative;
+}
+
+.header_bg {
+    width: 100%;
+}
+
+.main_header {
+    font-size: 130px;
+    color: #0b0b34;
+    position: absolute;
+    top: 50vh;
+    margin-left: 7%;
+}
+
+.main_text {
+    font-size: 30px;
+    line-height: 42px;
+    text-align: right;
+    color: #0b0b34;
+    position: absolute;
+    top: 90vh;
+    left: 50vw;
+    margin-right: 7%;
+}
+
+.main_language {
+    text-decoration-line: underline;
+    color: #0a0f35;
+    font-size: 20px;
+    position: absolute;
+    top: 122vh;
+    left: 80vw;
+}
+
+.main_language:hover {
+    cursor: pointer;
+}
+
+.blocks {
+    margin-top: 230px;
+}
+
+.block {
+    width: 600px;
+    height: 100px;
+    background: rgba(245, 226, 207, 1);
+    border: 3px solid #000000;
+    border-radius: 20px;
+    display: flex;
+}
+
+.about_composition {
+    margin-left: 35px;
+}
+
+.heading_composition {
+    font-size: 26px;
+    margin-top: 20px;
+    font-family: Ruslan Display;
+}
+
+.data_composition {
+    font-size: 14px;
+    font-family: Ruslan Display;
+}
+
+.author {
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: -10px;
+    font-family: Ruslan Display;
+}
+
+.popular_composition {
+    display: flex;
+}
+
+.texts_composition {
+    margin-top: 90px;
+    position: relative;
+}
+
+.composition_head {
+    font-size: 65px;
+    line-height: 83px;
+    text-align: right;
+}
+
+.composition_text {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+    margin-left: 280px;
+    margin-top: 10px;
+}
+
+.atnic_picture {
+    position: absolute;
+    left: 12vw;
+    top: 56vh;
+    width: 40%;
+}
+
+.watch_composition {
+    font-size: 30px;
+    text-decoration-line: underline;
+    color: #000000;
+    position: absolute;
+    top: 700px;
+    margin-left: 130px;
+}
+
+.redaction {
+    margin-top: 150px;
+}
+
+.columns_redaction {
+    display: flex;
+}
+
+.redaction_text {
+    font-size: 34px;
+    text-align: right;
+}
+
+.redaction_nav_column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 66px;
+}
+
+.atnic_picture_redaction {
+    width: 70%;
+    margin-left: 20px;
+}
+
+.all_composition {
+    font-size: 24px;
+    text-decoration-line: underline;
+    color: #000000;
+    margin-top: 170px;
+    margin-bottom: 170px;
+}
+
+.mini_blocks {
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: 110px;
+    margin-top: 56px;
+}
+
+.mini_block {
+    width: 298px;
+    height: 318px;
+    background: rgba(221, 171, 95, 1);
+}
+
+.light_block {
+    background: rgba(245, 226, 207, 1);
+}
+
+.crown {
+    margin-top: 16px;
+    margin-left: 12px;
+}
+
+.mini_block_heading {
+    font-family: Ruslan Display;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 24px;
+}
+
+.mini_block_author {
+    font-family: Ruslan Display;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+
+.mini_block_type {
+    font-family: Ruslan Display;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.popular_authors {
+    margin-top: 80px;
+}
+
+.authors_heading {
+    font-size: 66px;
+    line-height: 72px;
+    width: 400px;
+}
+
+.authors_text {
+    font-size: 20px;
+    line-height: 28px;
+    width: 300px;
+    margin-top: 22px;
+}
+
+.columns_authors {
+    display: flex;
+}
+
+.columns {
+    display: flex;
+    margin-top: 80px;
+}
+
+.column {
+    width: 300px;
+    height: 600px;
+    background: rgba(245, 226, 207, 1);
+}
+
+.dark_column {
+    background: rgba(221, 171, 95, 1);
+}
+
+.column_avatar {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.atnic_picture_author {
+    width: 60%;
+}
+
+.authors_nav_column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 90px;
+}
+
+.name_author {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.readers,
+.comments,
+.types {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+
+.profile_btn {
+    width: 300px;
+    height: 70px;
+    outline: none;
+    border: none;
+    background: rgba(221, 171, 95, 1);
+    margin-top: 90px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.profile_btn:hover {
+    cursor: pointer;
+}
+
+.light_profile_btn {
+    background: rgba(245, 226, 207, 1);
+    color: #000000;
+}
+
+.statistics_news {
+    display: flex;
+    margin-top: 120px;
+}
+
+.statistic_heading {
+    font-size: 68px;
+    text-align: left;
+}
+
+.publicated_compositions,
+.publicated_everyday {
+    font-size: 36px;
+    text-align: left;
+}
+
+.publicated_compositions {
+    margin-top: 36px;
+}
+
+.publicated_compositions-number,
+.publicated_everyday-number {
+    font-size: 70px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 36px;
+}
+
+.amount_authors {
+    font-size: 36px;
+    text-align: right;
+    margin-left: 200px;
+}
+
+.amount_authors-number {
+    font-size: 70px;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 36px;
+    margin-left: 80px;
+}
+
+.news_heading {
+    font-size: 72px;
+    text-align: right;
+}
+
+.gray_blocks {
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: 160px;
+    margin-top: 34px;
+}
+
+.gray_block {
+    width: 300px;
+    height: 250px;
+    background: #C4C4C4;
+}
+
+.white_block {
+    background: #fff;
+}
+
+.title {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.text {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.history {
+    display: flex;
+    margin-top: 100px;
+}
+
+.history_text {
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.column2_atnick {
+    margin-left: 100px;
+}
+
+.column2 {
+    margin-top: 130px;
+}
+
+footer {
+    width: 100%;
+    height: 460px;
+    background: rgba(221, 171, 95, 1);
+    margin-top: 96px;
+}
+
+.navbar {
+    padding-top: 50px;
+}
+
+.navbar__item {
+    font-size: 24px;
+    color: #0A0F35;
+    margin-left: 60px;
+}
+
+@media(max-width: 1200px) {
+    .main_header {
+        font-size: 100px;
+        top: 40vh;
+    }
+    .main_text {
+        font-size: 24px;
+        top: 57vh;
+    }
+    .main_language {
+        font-size: 16px;
+        top: 86vh;
+    }
+    .block {
+        width: 400px;
+        height: 70px;
+    }
+    .heading_composition {
+        font-size: 18px;
+    }
+    .data_composition {
+        font-size: 12px;
+    }
+    .author {
+        font-size: 16px;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    .composition_head {
+        font-size: 50px;
+    }
+    .composition_text {
+        font-size: 20px;
+    }
+    .atnic_picture {
+        width: 30%;
+        top: 340px;
+    }
+    .watch_composition {
+        font-size: 23px;
+        top: 520px;
+    }
+    .mini_block {
+        width: 260px;
+        height: 260px;
+    }
+    .column {
+        width: 200px;
+        height: 400px;
+    }
+    .column_avatar {
+        margin-left: 20px;
+    }
+    .profile_btn {
+        width: 200px;
+        height: 57px;
+        margin-top: 20px;
+    }
+    .history_text {
+        font-size: 18px;
+    }
+    .navbar__item {
+        font-size: 16px;
+        margin-left: 30px;
+    }
+    .navbar {
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 992px) {
+    .main_header {
+        font-size: 80px;
+        top: 27vh;
+    }
+    .main_text {
+        font-size: 18px;
+        top: 40vh;
+    }
+    .main_language {
+        font-size: 12px;
+        top: 67vh;
+    }
+    .popular_composition {
+        flex-direction: column-reverse;
+    }
+    .blocks {
+        margin-top: 30px;
+    }
+    .block {
+        width: 400px;
+        height: 70px;
+    }
+    .heading_composition {
+        font-size: 18px;
+    }
+    .data_composition {
+        font-size: 12px;
+    }
+    .author {
+        font-size: 16px;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    .composition_head {
+        font-size: 50px;
+    }
+    .composition_text {
+        font-size: 20px;
+    }
+    .atnic_picture {
+        width: 30%;
+        top: 200px;
+        left: 70%;
+    }
+    .watch_composition {
+        font-size: 23px;
+        top: 500px;
+        left: 50%;
+    }
+    .mini_block {
+        width: 260px;
+        height: 260px;
+    }
+    .columns_authors {
+        flex-direction: column-reverse;
+    }
+    .column {
+        width: 200px;
+        height: 400px;
+    }
+    .atnic_picture_author {
+        display: none;
+    }
+    .all_composition {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .column_avatar {
+        margin-left: 20px;
+    }
+    .profile_btn {
+        width: 200px;
+        height: 57px;
+        margin-top: 20px;
+    }
+    .statistics_news {
+        flex-direction: column;
+    }
+    .gray_blocks {
+        margin-left: 20px;
+    }
+    .history_text {
+        font-size: 14px;
+    }
+    .column2_atnick {
+        width: 70%;
+    }
+    .navbar__item {
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    .navbar {
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 768px) {
+    .main_header {
+        font-size: 50px;
+        top: 20vh;
+    }
+    .main_text {
+        font-size: 14px;
+        line-height: 20px;
+        top: 30vh;
+    }
+    .main_language {
+        font-size: 10px;
+        top: 49vh;
+    }
+    .atnic_picture {
+        display: none;
+    }
+    .popular_composition {
+        flex-direction: column-reverse;
+    }
+    .blocks {
+        margin-top: 30px;
+    }
+    .block {
+        width: 400px;
+        height: 70px;
+    }
+    .heading_composition {
+        font-size: 18px;
+    }
+    .data_composition {
+        font-size: 12px;
+    }
+    .author {
+        font-size: 16px;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    .composition_head {
+        font-size: 50px;
+    }
+    .composition_text {
+        font-size: 20px;
+    }
+    .watch_composition {
+        font-size: 23px;
+        top: 760px;
+        left: -20%;
+    }
+    .mini_blocks {
+        margin-left: 50px;
+    }
+    .mini_block {
+        width: 260px;
+        height: 260px;
+    }
+    .atnic_picture_redaction {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .columns_authors {
+        flex-direction: column-reverse;
+    }
+    .columns {
+        flex-direction: column;
+    }
+    .column {
+        margin-top: 70px;
+    }
+    .atnic_picture_author {
+        display: none;
+    }
+    .all_composition {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .column_avatar {
+        margin-left: 20px;
+    }
+    .profile_btn {
+        width: 200px;
+        height: 57px;
+        margin-top: 20px;
+    }
+    .statistics_news {
+        flex-direction: column;
+    }
+    .gray_blocks {
+        margin-left: 20px;
+    }
+    .history_text {
+        font-size: 14px;
+    }
+    .column2_atnick {
+        display: none;
+    }
+    .navbar__item {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .navbar {
+        margin-left: 0px;
+    }
+}

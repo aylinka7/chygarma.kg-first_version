@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Underdog&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Underdog;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.header_block {
+    width: 100%;
+    height: 100px;
+    background: rgba(221, 171, 95, 1);
+    padding: 15px 7%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -100vh;
+    left: 27vw;
+    background: rgba(60, 60, 60, 0.25);
+    padding: 50px 68px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.form {
+    position: relative;
+}
+
+.login_title {
+    font-size: 48px;
+}
+
+input {
+    outline: none;
+    border: none;
+    width: 500px;
+    height: 60px;
+    margin-top: 26px;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.forget_password {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.forget_password>a {
+    font-size: 18px;
+}
+
+.login_btn {
+    background: #ddab5f;
+    border-radius: 10px;
+    width: 300px;
+    height: 68px;
+    font-size: 28px;
+    border: none;
+    outline: none;
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+.bg {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 460px;
+    background: rgba(221, 171, 95, 1);
+    margin-top: -5px;
+}
+
+.form_checkin {
+    top: -114vh;
+}
+
+.password_text {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+@media(max-width: 1200px) {
+    form {
+        left: 18%;
+        top: -86vh;
+    }
+    .form_checkin {
+        left: 18%;
+        top: -93vh;
+    }
+}
+
+@media(max-width: 992px) {
+    form {
+        left: 20%;
+        top: -450px;
+    }
+    .form_checkin {
+        left: 20%;
+        top: -480px;
+    }
+    .login_title {
+        font-size: 30px;
+    }
+    input {
+        width: 300px;
+        height: 40px;
+    }
+    .forget_password {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .forget_password>a {
+        font-size: 14px;
+    }
+    .login_btn {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 7px;
+        margin-left: 50px;
+    }
+    footer {
+        height: 200px;
+    }
+}
+
+@media(max-width: 768px) {
+    form {
+        left: 16%;
+        top: -360px;
+        padding: 30px 40px;
+    }
+    .form_checkin {
+        left: 16%;
+        top: -360px;
+        padding: 30px 40px;
+    }
+    .login_title {
+        font-size: 24px;
+    }
+    input {
+        width: 300px;
+        height: 40px;
+    }
+    .forget_password {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .forget_password>a {
+        font-size: 10px;
+    }
+    .login_btn {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 7px;
+        margin-left: 50px;
+    }
+    footer {
+        height: 200px;
+    }
+}
