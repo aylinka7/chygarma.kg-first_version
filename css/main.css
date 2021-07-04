@@ -503,7 +503,7 @@ footer {
         flex-direction: column-reverse;
     }
     .blocks {
-        margin-top: 30px;
+        margin-top: 30 px;
     }
     .block {
         width: 400px;
@@ -577,6 +577,154 @@ footer {
     .navbar__item {
         font-size: 14px;
         margin-left: 30px;
+    }
+    .navbar {
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 768px) {
+    .main_header {
+        font-size: 50px;
+        top: 20vh;
+    }
+    .main_text {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        top: 30vh;
+        left: 7%;
+    }
+    .main_language {
+        font-size: 10px;
+        top: 42vh;
+        left: 7%;
+    }
+    .atnic_picture {
+        display: none;
+    }
+    .popular_composition {
+        flex-direction: column-reverse;
+    }
+    .blocks {
+        margin-top: 30px;
+    }
+    .block {
+        width: 250px;
+        height: 200px;
+    }
+    .heading_composition {
+        font-size: 14px;
+    }
+    .data_composition {
+        font-size: 10px;
+    }
+    .author {
+        font-size: 16px;
+        margin-top: 100px;
+        margin-left: -80%;
+    }
+    .composition_head {
+        font-size: 40px;
+        text-align: left;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    .composition_text {
+        font-size: 16px;
+        line-height: 16px;
+        text-align: left;
+        margin-left: 0;
+    }
+    .watch_composition {
+        font-size: 23px;
+        top: 210vh;
+        left: -40%;
+    }
+    .redaction_text {
+        font-size: 16px;
+    }
+    .mini_blocks {
+        margin-left: 0px;
+    }
+    .mini_block {
+        width: 260px;
+        height: 260px;
+    }
+    .atnic_picture_redaction {
+        display: none;
+    }
+    .columns_authors {
+        flex-direction: column-reverse;
+    }
+    .columns {
+        flex-direction: column;
+    }
+    .column {
+        margin-top: 70px;
+    }
+    .atnic_picture_author {
+        display: none;
+    }
+    .columns_redaction {
+        flex-direction: column-reverse
+    }
+    .column_avatar {
+        margin-left: 20px;
+    }
+    .profile_btn {
+        width: 200px;
+        height: 57px;
+        margin-top: 20px;
+    }
+    .authors_heading {
+        font-size: 40px;
+        line-height: 40px;
+        width: 300px;
+    }
+    .authors_text {
+        font-size: 16px;
+    }
+    .statistics_news {
+        flex-direction: column;
+    }
+    .statistic_heading {
+        font-size: 50px;
+    }
+    .publicated_compositions,
+    .publicated_everyday {
+        font-size: 20px;
+    }
+    .publicated_compositions-number,
+    .publicated_everyday-number,
+    .amount_authors-number {
+        font-size: 50px;
+    }
+    .amount_authors {
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .gray_blocks {
+        margin-left: 20px;
+    }
+    .history {
+        flex-direction: column;
+    }
+    .history_text {
+        font-size: 14px;
+    }
+    .news_heading {
+        font-size: 60px;
+    }
+    .statistic_heading {
+        font-size: 40px;
+    }
+    .column2_atnick {
+        display: none;
+    }
+    .navbar__item {
+        font-size: 12px;
+        margin-left: 10px;
     }
     .navbar {
         margin-left: 0px;
@@ -675,6 +823,154 @@ footer {
     }
     .history_text {
         font-size: 14px;
+    }
+    .column2_atnick {
+        display: none;
+    }
+    .navbar__item {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .navbar {
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 552px) {
+    .main_header {
+        font-size: 50px;
+        top: 20vh;
+    }
+    .main_text {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        top: 30vh;
+        left: 7%;
+    }
+    .main_language {
+        font-size: 10px;
+        top: 42vh;
+        left: 7%;
+    }
+    .atnic_picture {
+        display: none;
+    }
+    .popular_composition {
+        flex-direction: column-reverse;
+    }
+    .blocks {
+        margin-top: 30px;
+    }
+    .block {
+        width: 250px;
+        height: 200px;
+    }
+    .heading_composition {
+        font-size: 14px;
+    }
+    .data_composition {
+        font-size: 10px;
+    }
+    .author {
+        font-size: 16px;
+        margin-top: 100px;
+        margin-left: -80%;
+    }
+    .composition_head {
+        font-size: 40px;
+        text-align: left;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    .composition_text {
+        font-size: 16px;
+        line-height: 16px;
+        text-align: left;
+        margin-left: 0;
+    }
+    .watch_composition {
+        font-size: 23px;
+        top: 210vh;
+        left: -40%;
+    }
+    .redaction_text {
+        font-size: 16px;
+    }
+    .mini_blocks {
+        margin-left: 0px;
+    }
+    .mini_block {
+        width: 260px;
+        height: 260px;
+    }
+    .atnic_picture_redaction {
+        display: none;
+    }
+    .columns_authors {
+        flex-direction: column-reverse;
+    }
+    .columns {
+        flex-direction: column;
+    }
+    .column {
+        margin-top: 70px;
+    }
+    .atnic_picture_author {
+        display: none;
+    }
+    .columns_redaction {
+        flex-direction: column-reverse
+    }
+    .column_avatar {
+        margin-left: 20px;
+    }
+    .profile_btn {
+        width: 200px;
+        height: 57px;
+        margin-top: 20px;
+    }
+    .authors_heading {
+        font-size: 40px;
+        line-height: 40px;
+        width: 300px;
+    }
+    .authors_text {
+        font-size: 16px;
+    }
+    .statistics_news {
+        flex-direction: column;
+    }
+    .statistic_heading {
+        font-size: 50px;
+    }
+    .publicated_compositions,
+    .publicated_everyday {
+        font-size: 20px;
+    }
+    .publicated_compositions-number,
+    .publicated_everyday-number,
+    .amount_authors-number {
+        font-size: 50px;
+    }
+    .amount_authors {
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .gray_blocks {
+        margin-left: 20px;
+    }
+    .history {
+        flex-direction: column;
+    }
+    .history_text {
+        font-size: 14px;
+    }
+    .news_heading {
+        font-size: 60px;
+    }
+    .statistic_heading {
+        font-size: 40px;
     }
     .column2_atnick {
         display: none;
