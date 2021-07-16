@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: Underdog;
     font-weight: normal;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -19,12 +20,216 @@ li {
 .container {
     padding: 0 7%;
 }
+.burger_menu{
+    position: fixed;
+    right: -1000px;
+    top: 100px;
+    max-width: 343px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .4s;
+    z-index: -1;
+}
+
+.burger_active{
+    right: 0;
+    opacity: 1;
+    z-index: 1;
+}
+.burger_content{
+    max-width: 343px;
+    width: 100%;
+    background: #F5E2CF;
+    height: 249px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 36px;
+    position: relative;
+}
+.burger_link{
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    /* padding: 20px 0; */
+    transition:  all .3s;
+    margin-bottom: 20px;
+}
+.burger_link:hover{
+    background: rgba(221, 171, 95, 1);
+}
+.burger_close_btn{
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.burger_bg{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+.login_btn-burger {
+    border: 3px solid #DDAB5F;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: none;
+    font-family: Underdog;
+    font-weight: normal;
+    font-size: 12px;
+    width: 110px;
+    height: 40px;
+    padding: 13px 36px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.registr_btn-burger {
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #DDAB5F;
+    font-family: Underdog;
+    font-weight: normal;
+    font-size: 12px;
+    width: 110px;
+    height: 40px;
+    padding: 13px 18px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    display: none;
+    margin-left: 10px;
+}
+.burger_buttons{
+    display: flex;
+    margin-bottom: 22px;
+}
+.login_btn-burger img{
+    margin-left: 6px;
+}
+
+
 
 .header_block {
     width: 100%;
     height: 100px;
     background: rgba(221, 171, 95, 1);
     padding: 15px 7%;
+    position: relative;
+    display: flex;
+    /* position: fixed;
+    top: 0;
+    z-index: 1; */
+}
+.header_block_user {
+    width: 100%;
+    height: 100px;
+    background: rgba(221, 171, 95, 1);
+    padding: 15px 7%;
+    position: relative;
+    display: none;
+}
+.name_user{
+    color: #000000;
+    font-weight: 600;
+    align-items: center;
+    display: flex;
+    margin-left: 5vw;
+}
+.name_user img{
+    margin-left: 20px;
+}
+.logo_white {
+    display: none;
+}
+.navbar {
+    display: flex;
+    margin-top: 26px;
+    margin-left: 7vw;
+    /* justify-content: space-around; */
+    /* max-width: 600px;
+    width: 100%; */
+}
+.navbar_item {
+    margin-right: 7vw;
+    font-family: Underdog;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.login_btn {
+    border: 3px solid #f5e2cf;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: none;
+    font-family: Underdog;
+    font-weight: normal;
+    font-size: 18px;
+    width: 149px;
+    height: 57px;
+    position: absolute;
+    right: calc(183px + 7%);
+    top: 22px;
+    padding: 18px 44px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+.registr_btn {
+    border: 3px solid #f5e2cf;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: rgba(245, 226, 207, 1);
+    font-family: Underdog;
+    font-weight: normal;
+    font-size: 18px;
+    width: 167px;
+    height: 57px;
+    position: absolute;
+    right: 7%;
+    top: 22px;
+    padding: 18px 21px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+.login_btn img,
+.registr_btn img {
+    margin-left: 10px;
+}
+.login_btn:hover {
+    cursor: pointer;
+}
+.uzor {
+    display: none;
+    position: absolute
+}
+.uzor1 {
+    left: 70%;
+}
+.burger {
+    position: absolute;
+    right: 0;
+    top: 28px;
+    display: none;
+}
+.burger img{
+    width: 100%;
+    max-width: 68px;
+}
+.burger:hover {
+    cursor: pointer;
 }
 
 header {
@@ -32,6 +237,10 @@ header {
 }
 
 .header_bg {
+    width: 100%;
+}
+.header_bg2{
+    display: none;
     width: 100%;
 }
 
@@ -364,7 +573,15 @@ header {
 .gray_block {
     width: 300px;
     height: 250px;
-    background: #C4C4C4;
+    background: #c4c4c4;
+}
+.uzors {
+    margin-left: 10vw;
+    display: none;
+}
+.uzors1 {
+    margin-left: 60vw;
+    display: none;
 }
 
 .white_block {
@@ -404,19 +621,78 @@ footer {
     height: 460px;
     background: rgba(221, 171, 95, 1);
     margin-top: 96px;
+    position: relative;
 }
 
-.navbar {
+.navbar_ {
     padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
 }
-
+.navbar_column{
+    display: flex;
+    flex-direction: column;
+}
+.navbar_column:last-child{
+    padding-right: 7%;
+}
 .navbar__item {
     font-size: 24px;
-    color: #0A0F35;
-    margin-left: 60px;
+    color: #000000;
+    margin-top: 16px;
+    
 }
-
-@media(max-width: 1200px) {
+.navbar__column:first-child{
+    margin-left: 1px;
+}
+.navbar__item:hover {
+    cursor: pointer;
+}
+.navbar__item:nth-child(5){
+    position: absolute;
+    left: 7%;
+    bottom: 44px;
+}
+.social{
+    position: absolute;
+    right: 7%;
+    bottom: 48px;
+}
+.icons {
+    margin-top: 30px;
+    margin-left: -20px;
+}
+.icon {
+    margin-left: 26px;
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+    .main_header {
+        font-size: 144px;
+        top: 40vh;
+    }
+    .main_text {
+        font-size: 36px;
+        top: 660px;
+    }
+    .main_language {
+        top: 960px;
+    }
+    .atnic_picture {
+        top: 40vh;
+    }
+}
+@media (max-width: 1200px) {
+    .name_user{
+        margin-left: 7vw;
+    }
+    .navbar_item {
+        margin-left: 5vw;
+        margin-right: 0;
+        font-size: 15px;
+    }
+    .navbar{
+        margin-left: 0;
+    }
     .main_header {
         font-size: 100px;
         top: 40vh;
@@ -474,19 +750,72 @@ footer {
         height: 57px;
         margin-top: 20px;
     }
+    .statistics_news {
+        flex-direction: column-reverse;
+    }
     .history_text {
         font-size: 18px;
     }
+    .news_heading {
+        text-align: center;
+    }
+    .statistic_heading {
+        text-align: center;
+        margin-top: 70px;
+    }
+    .publicated_compositions,
+    .publicated_everyday {
+        margin-top: -60px;
+        width: 280px;
+    }
+    .history_text2 {
+        margin-left: 20px;
+    }
+    .amount_authors {
+        margin-top: -140px;
+    }
+    .mini_block:nth-child(3) {
+        background: rgba(221, 171, 95, 1);
+    }
+    .mini_block:nth-child(4) {
+        background: rgba(245, 226, 207, 1);
+    }
     .navbar__item {
         font-size: 16px;
-        margin-left: 30px;
     }
-    .navbar {
-        margin-left: 30px;
+    
+    .uzors,
+    .uzors1 {
+        display: flex;
     }
 }
 
-@media(max-width: 992px) {
+@media (max-width: 992px) {
+    .navbar {
+        margin-left: 0vw;
+    }
+    .navbar_item {
+        margin-left: 3vw;
+        margin-right: 0;
+        font-size: 13px;
+    }
+    .login_btn {
+        font-size: 16px;
+        width: 120px;
+        height: 48px;
+        right: calc(7% + 150px);
+        padding: 16px 34px;
+    }
+    .registr_btn {
+        font-size: 16px;
+        width: 140px;
+        height: 48px;
+        padding: 16px 16px;
+    }
+    .login_btn img,
+    .registr_btn img {
+        margin-left: 6px;
+    }
     .main_header {
         font-size: 80px;
         top: 27vh;
@@ -499,60 +828,97 @@ footer {
         font-size: 12px;
         top: 67vh;
     }
+    .atnic_picture {
+        display: none;
+    }
     .popular_composition {
         flex-direction: column-reverse;
     }
     .blocks {
-        margin-top: 30 px;
+        margin-top: 30px;
     }
     .block {
-        width: 400px;
-        height: 70px;
+        width: 90%;
+        /* height: 200px; */
     }
     .heading_composition {
-        font-size: 18px;
+        font-size: 22px;
+        font-family: Underdog;
+        margin-top: 5px;
+        margin-left: -18px;
     }
     .data_composition {
         font-size: 12px;
+        font-family: Underdog;
+        margin-top: 14px;
+        margin-left: -18px;
     }
     .author {
-        font-size: 16px;
-        margin-top: 40px;
-        margin-left: 0;
+        font-size: 20px;
+        margin-top: 36px;
+        font-family: Underdog;
+        margin-left: 60px;
     }
     .composition_head {
-        font-size: 50px;
+        font-size: 40px;
+        text-align: left;
+        line-height: 40px;
+        margin-top: 20px;
+        text-align: right;
+    }
+    .uzor {
+        display: flex;
     }
     .composition_text {
-        font-size: 20px;
-    }
-    .atnic_picture {
-        width: 30%;
-        top: 200px;
-        left: 70%;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: right;
+        /* margin-left: 0; */
+        width: 200px;
     }
     .watch_composition {
         font-size: 23px;
-        top: 500px;
-        left: 50%;
+        top: 92vh;
+        left: 0%;
+    }
+    .redaction_text {
+        font-size: 16px;
+    }
+    .mini_blocks {
+        margin-top: 80px;
+        margin-left: 0;
     }
     .mini_block {
-        width: 260px;
+        width: 220px;
         height: 260px;
     }
-    .columns_authors {
-        flex-direction: column-reverse;
+
+    .all_composition {
+        text-align: center;
+        margin-top: 0;
+    }
+    .atnic_picture_redaction {
+        display: none;
+    }
+
+    .columns {
+        margin-left: 10%;
+        margin-top: -30px;
     }
     .column {
-        width: 200px;
-        height: 400px;
+        margin-top: 70px;
+    }
+
+    .all_authors {
+        position: absolute;
+        top: 444vh;
+        left: 38%;
     }
     .atnic_picture_author {
         display: none;
     }
-    .all_composition {
-        margin-top: 0;
-        margin-bottom: 0;
+    .columns_redaction {
+        flex-direction: column-reverse;
     }
     .column_avatar {
         margin-left: 20px;
@@ -562,43 +928,138 @@ footer {
         height: 57px;
         margin-top: 20px;
     }
+    .authors_heading {
+        font-size: 40px;
+        line-height: 40px;
+        width: 300px;
+        margin-top: -120px;
+    }
+    .authors_text {
+        font-size: 16px;
+    }
     .statistics_news {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .statistic_heading {
+        font-size: 50px;
+        text-align: center;
+    }
+    .publicated_compositions,
+    .publicated_everyday {
+        font-size: 20px;
+        margin-top: -60px;
+        width: 280px;
+    }
+    .publicated_compositions-number,
+    .publicated_everyday-number,
+    .amount_authors-number {
+        font-size: 50px;
+    }
+    .amount_authors {
+        font-size: 20px;
+        margin-left: 0;
+        margin-top: -140px;
     }
     .gray_blocks {
         margin-left: 20px;
     }
+    .gray_block {
+        max-width: 318px;
+        width: 100%;
+        height: 290px;
+        border-radius: 20px;
+    }
+    .title {
+        margin-top: 20px;
+    }
+    /* .history {
+        flex-direction: column;
+    } */
     .history_text {
         font-size: 14px;
     }
+    .history_text2 {
+        margin-top: 120px;
+    }
+    .news_heading {
+        font-size: 60px;
+        margin-top: 50px;
+        text-align: left;
+    }
+    .statistic_heading {
+        font-size: 40px;
+    }
     .column2_atnick {
-        width: 70%;
+        width: 40%;
+    }
+    .navbar_{
+        margin-left: 0;
     }
     .navbar__item {
         font-size: 14px;
-        margin-left: 30px;
     }
-    .navbar {
-        margin-left: 0px;
+    .icons {
+        display: flex;
+        margin-left: -40px;
+    }
+    .uzors,
+    .uzors1 {
+        display: flex;
     }
 }
 
-@media(max-width: 768px) {
+@media  (max-width: 788px) {
+    .logo_white {
+        display: flex;
+    }
+    .header_bg2{
+        display: flex;
+    }
+    .header_bg{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo_black {
+        display: none;
+    }
+    .login_btn {
+        width: 120px;
+        height: 49px;
+        font-size: 14px;
+        padding: 12px 34px;
+        right: calc(145px + 22%);
+    }
+    .registr_btn {
+        width: 131px;
+        height: 49px;
+        font-size: 14px;
+        padding: 12px 10px;
+        right: 22%;
+    }
+    .burger {
+        display: flex;
+    }
+    .burger img {
+        width: 80%;
+    }
     .main_header {
         font-size: 50px;
-        top: 20vh;
+        top: 60vh;
     }
     .main_text {
         font-size: 14px;
         line-height: 20px;
-        text-align: left;
-        top: 30vh;
-        left: 7%;
+        text-align: right;
+        width: 300px;
+        top: 70vh;
+        left: 38%;
     }
     .main_language {
         font-size: 10px;
-        top: 42vh;
-        left: 7%;
+        top: 86vh;
+        left: 76%;
     }
     .atnic_picture {
         display: none;
@@ -610,64 +1071,97 @@ footer {
         margin-top: 30px;
     }
     .block {
-        width: 250px;
-        height: 200px;
+        width: 90%;
+        /* height: 200px; */
     }
     .heading_composition {
-        font-size: 14px;
+        font-size: 22px;
+        font-family: Underdog;
+        margin-top: 5px;
+        margin-left: -18px;
     }
     .data_composition {
-        font-size: 10px;
+        font-size: 12px;
+        font-family: Underdog;
+        margin-top: 14px;
+        margin-left: -18px;
+    }
+    .uzors,
+    .uzors1 {
+        display: flex;
     }
     .author {
-        font-size: 16px;
-        margin-top: 100px;
-        margin-left: -80%;
+        font-size: 20px;
+        margin-top: 36px;
+        font-family: Underdog;
+        margin-left: 60px;
     }
     .composition_head {
         font-size: 40px;
         text-align: left;
         line-height: 40px;
         margin-top: 20px;
+        text-align: right;
+    }
+    .uzor {
+        display: flex;
     }
     .composition_text {
         font-size: 16px;
         line-height: 16px;
-        text-align: left;
-        margin-left: 0;
+        text-align: right;
+        /* margin-left: 0; */
+        width: 200px;
     }
     .watch_composition {
         font-size: 23px;
-        top: 210vh;
-        left: -40%;
+        top: 92vh;
+        left: 0%;
     }
     .redaction_text {
         font-size: 16px;
     }
     .mini_blocks {
-        margin-left: 0px;
+        margin-top: 50px;
+        margin-left: 0;
     }
     .mini_block {
-        width: 260px;
+        width: 240px;
         height: 260px;
+    }
+    .mini_block:nth-child(3) {
+        background: rgba(221, 171, 95, 1);
+    }
+    .mini_block:nth-child(4) {
+        background: rgba(245, 226, 207, 1);
+    }
+    .all_composition {
+        text-align: center;
     }
     .atnic_picture_redaction {
         display: none;
     }
-    .columns_authors {
-        flex-direction: column-reverse;
-    }
+
     .columns {
-        flex-direction: column;
+        margin-left: 10%;
+        margin-top: -20px;
     }
     .column {
         margin-top: 70px;
+    }
+    .column:last-child {
+        display: none;
+    }
+    .all_authors {
+        position: absolute;
+        top: 462vh;
+        left: 38%;
     }
     .atnic_picture_author {
         display: none;
     }
     .columns_redaction {
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
     }
     .column_avatar {
         margin-left: 20px;
@@ -686,14 +1180,17 @@ footer {
         font-size: 16px;
     }
     .statistics_news {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .statistic_heading {
         font-size: 50px;
+        text-align: center;
     }
     .publicated_compositions,
     .publicated_everyday {
         font-size: 20px;
+        margin-top: -60px;
+        width: 280px;
     }
     .publicated_compositions-number,
     .publicated_everyday-number,
@@ -703,47 +1200,114 @@ footer {
     .amount_authors {
         font-size: 20px;
         margin-left: 0;
+        margin-top: -140px;
     }
     .gray_blocks {
         margin-left: 20px;
     }
-    .history {
-        flex-direction: column;
+    .gray_block {
+        max-width: 250px;
+        width: 100%;
+        height: 290px;
+        border-radius: 20px;
     }
+    .title {
+        margin-top: 20px;
+    }
+    /* .history {
+        flex-direction: column;
+    } */
     .history_text {
         font-size: 14px;
     }
+    .history_text2 {
+        margin-top: 120px;
+    }
     .news_heading {
         font-size: 60px;
+        margin-top: 50px;
+        text-align: left;
     }
     .statistic_heading {
         font-size: 40px;
     }
     .column2_atnick {
-        display: none;
+        width: 40%;
     }
     .navbar__item {
-        font-size: 12px;
-        margin-left: 10px;
+        font-size: 16px;
+        margin-top: 6px;
     }
-    .navbar {
-        margin-left: 0px;
+    
+    .navbar_column:nth-child(3){
+        position: absolute;
+        top: 180px
+    }
+    .navbar_column:nth-child(4){
+        position: absolute;
+        top: 180px;
+        left: 50vw;
+    }
+    .navbar_column:nth-child(2){
+        position: absolute;
+        top: 50px;
+        left: 50vw;
+    }
+    .social{
+        left: 56vw;
+        bottom: 20px;
+    }
+    
+    footer {
+        position: relative;
     }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 576px) {
+    .registr_btn-burger, .login_btn-burger{
+        display: flex;
+    }
+    .burger_menu{
+        top: 70px;
+        max-width: 255px;
+    }
+    .burger_content{
+        max-width: 255px;
+        padding-left: 20px;
+        padding-top: 12px;
+    }
+    .burger_link{
+        font-size: 18px;
+    }
+    
+
+
+
+    .registr_btn, .login_btn{
+        display: none;
+    }
+    .burger{
+        top: 18px;
+        right: 0;
+    }
+    .header_block{
+        height: 70px;
+    }
+    
     .main_header {
-        font-size: 50px;
-        top: 20vh;
+        font-size: 48px;
+        top: 24vh;
     }
     .main_text {
         font-size: 14px;
         line-height: 20px;
-        top: 30vh;
+        top: 35vh;
+        left: -5vw;
     }
     .main_language {
         font-size: 10px;
         top: 49vh;
+        left: 62vw;
     }
     .atnic_picture {
         display: none;
@@ -755,7 +1319,8 @@ footer {
         margin-top: 30px;
     }
     .block {
-        width: 400px;
+        width: 100%;
+        max-width: 500px;
         height: 70px;
     }
     .heading_composition {
@@ -763,43 +1328,88 @@ footer {
     }
     .data_composition {
         font-size: 12px;
+        margin-top: 6px;
     }
     .author {
         font-size: 16px;
         margin-top: 40px;
-        margin-left: 0;
+        margin-left: -20px;
     }
     .composition_head {
-        font-size: 50px;
+        font-size: 24px;
+        margin-top: -10vh;
+
     }
     .composition_text {
-        font-size: 20px;
+        font-size: 13px;
+        margin-left: 60px;
+    }
+    .uzor{
+        top: -8vh;
+    }
+    .redaction{
+        position: relative;
+    }
+    .uzor_delete{
+        top: -10px;
+    } 
+    
+    .uzor_up{
+        display: none;
+    }
+    .uzor img{
+        width: 50%;
     }
     .watch_composition {
-        font-size: 23px;
-        top: 760px;
-        left: -20%;
+        font-size: 12px;
+        top: 84vh;
+        left: -28%;
     }
-    .mini_blocks {
-        margin-left: 50px;
+    .mini_block:nth-child(3){
+        background: rgba(245, 226, 207, 1);
+    }
+    .mini_block:nth-child(4){
+        background: rgba(221, 171, 95, 1);
+    }
+    .crown{
+        display: none;
     }
     .mini_block {
-        width: 260px;
-        height: 260px;
+        width: 100%;
+        max-width: 500px    ;
+        height: 208px;
     }
+    .mini_block_heading{
+        font-family: Underdog;
+        text-transform: none;
+        font-size: 20px;
+    }
+    .mini_block_author, .mini_block_type{
+        font-family: Underdog;
+        text-transform: none;
+        font-size: 16px;
+    }
+    .authors_heading{
+        margin-top: 100px;
+    }
+    
     .atnic_picture_redaction {
         margin-top: 80px;
         margin-bottom: 80px;
     }
-    .columns_authors {
-        flex-direction: column-reverse;
-    }
-    .columns {
+    .columns{
+        margin-left: 0px;
         flex-direction: column;
     }
+    
+    
     .column {
-        margin-top: 70px;
+        /* width: 100%; */
+        max-width: 300px;
+        height: 380px;
+        margin-left: 0px;
     }
+    
     .atnic_picture_author {
         display: none;
     }
@@ -807,179 +1417,122 @@ footer {
         margin-top: 0;
         margin-bottom: 0;
     }
+    .authors_nav_column{
+        position: relative;
+    }
+    .authors_heading{
+        width: 100px;
+    }
+    .authors_text{
+        width: 250px;
+    }
+    .all_authors{
+        position: absolute;
+        top: 360px;
+        left: -280px;
+    }
     .column_avatar {
         margin-left: 20px;
     }
     .profile_btn {
-        width: 200px;
+        width: 100%;
+        max-width: 250px;
         height: 57px;
-        margin-top: 20px;
+        margin-top: -20px;
     }
     .statistics_news {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .news_heading{
+        font-size: 24px;
+    }
+    .statistic_heading{
+        font-style: 24px;
+        margin-bottom: 40px;
+    }
+    .publicated_compositions, .publicated_everyday {
+        font-size: 18px;
+        width: 200px;
+    }
+    .publicated_compositions-number, .publicated_everyday-number, .amount_authors-number {
+        font-size: 36px;
     }
     .gray_blocks {
-        margin-left: 20px;
+        margin-left: 0;
     }
+    .column2{
+        margin-top: 70vh;
+        margin-left: -30vw;
+    }
+    .gray_block{
+        max-width: 130px;
+        width: 100%;
+        height: 120px;
+    }
+    .uzors img{
+        width: 70%;
+    }
+    .uzors2 img{
+        width: 24%;
+        margin-bottom: 100px;
+        margin-left: -30px;
+    }
+
+    .title{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-top: 6px;
+    }
+    .text{
+        font-size: 8px;
+        margin-left: 10px;
+        line-height: 96%;
+    }
+
     .history_text {
         font-size: 14px;
     }
     .column2_atnick {
         display: none;
     }
+    footer{
+        height: 242px;
+    }
     .navbar__item {
-        font-size: 12px;
+        font-size: 10px;
         margin-left: 10px;
     }
-    .navbar {
+    .icon img{
+        width: 80%;
+    }
+    .icon{
+        margin-left: 16px;
+    }
+    .navbar_ {
         margin-left: 0px;
+        padding-top: 10px;
+    }
+    .navbar_column:nth-child(2) {
+        top: 10px;
+        left: 44vw;
+    }
+    .navbar_column:nth-child(3) {
+        top: 100px;
+    }
+    .navbar_column:nth-child(4) {
+        top: 100px;
+    }
+    .navbar__item:nth-child(5) {
+        position: absolute;
+        left: 7%;
+        bottom: 20px;
+        width: 50px;
+    }
+    .social{
+        bottom: 6px;
+    }
+    .icons{
+        margin-top: 10px;
     }
 }
 
-@media(max-width: 552px) {
-    .main_header {
-        font-size: 50px;
-        top: 20vh;
-    }
-    .main_text {
-        font-size: 14px;
-        line-height: 20px;
-        text-align: left;
-        top: 30vh;
-        left: 7%;
-    }
-    .main_language {
-        font-size: 10px;
-        top: 42vh;
-        left: 7%;
-    }
-    .atnic_picture {
-        display: none;
-    }
-    .popular_composition {
-        flex-direction: column-reverse;
-    }
-    .blocks {
-        margin-top: 30px;
-    }
-    .block {
-        width: 250px;
-        height: 200px;
-    }
-    .heading_composition {
-        font-size: 14px;
-    }
-    .data_composition {
-        font-size: 10px;
-    }
-    .author {
-        font-size: 16px;
-        margin-top: 100px;
-        margin-left: -80%;
-    }
-    .composition_head {
-        font-size: 40px;
-        text-align: left;
-        line-height: 40px;
-        margin-top: 20px;
-    }
-    .composition_text {
-        font-size: 16px;
-        line-height: 16px;
-        text-align: left;
-        margin-left: 0;
-    }
-    .watch_composition {
-        font-size: 23px;
-        top: 210vh;
-        left: -40%;
-    }
-    .redaction_text {
-        font-size: 16px;
-    }
-    .mini_blocks {
-        margin-left: 0px;
-    }
-    .mini_block {
-        width: 260px;
-        height: 260px;
-    }
-    .atnic_picture_redaction {
-        display: none;
-    }
-    .columns_authors {
-        flex-direction: column-reverse;
-    }
-    .columns {
-        flex-direction: column;
-    }
-    .column {
-        margin-top: 70px;
-    }
-    .atnic_picture_author {
-        display: none;
-    }
-    .columns_redaction {
-        flex-direction: column-reverse
-    }
-    .column_avatar {
-        margin-left: 20px;
-    }
-    .profile_btn {
-        width: 200px;
-        height: 57px;
-        margin-top: 20px;
-    }
-    .authors_heading {
-        font-size: 40px;
-        line-height: 40px;
-        width: 300px;
-    }
-    .authors_text {
-        font-size: 16px;
-    }
-    .statistics_news {
-        flex-direction: column;
-    }
-    .statistic_heading {
-        font-size: 50px;
-    }
-    .publicated_compositions,
-    .publicated_everyday {
-        font-size: 20px;
-    }
-    .publicated_compositions-number,
-    .publicated_everyday-number,
-    .amount_authors-number {
-        font-size: 50px;
-    }
-    .amount_authors {
-        font-size: 20px;
-        margin-left: 0;
-    }
-    .gray_blocks {
-        margin-left: 20px;
-    }
-    .history {
-        flex-direction: column;
-    }
-    .history_text {
-        font-size: 14px;
-    }
-    .news_heading {
-        font-size: 60px;
-    }
-    .statistic_heading {
-        font-size: 40px;
-    }
-    .column2_atnick {
-        display: none;
-    }
-    .navbar__item {
-        font-size: 12px;
-        margin-left: 10px;
-    }
-    .navbar {
-        margin-left: 0px;
-    }
-}

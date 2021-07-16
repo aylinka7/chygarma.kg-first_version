@@ -10,10 +10,37 @@
 </head>
 
 <body>
-    <div class="header_block">
-        <a href="#"><img src="img/logo.svg" alt="" /></a>
+    <div class="burger_menu ">
+        <div class="burger_content">
+            <div class="burger_buttons">
+                <a href="authorization.html" class="login_btn-burger">Вход <img src="img/Arrow.svg" alt=""></a>
+                <a href="registration.html" class="registr_btn-burger">Регистрация </a>
+            </div>
+            <a href="#" class="burger_link">Главная</a>
+            <a href="#" class="burger_link">Авторы</a>
+            <a href="#" class="burger_link">Произведения</a>
+            <a href="#" class="burger_link">Новости</a>
+        </div>
+        <div class="burger_bg burger_close"></div>
     </div>
-    <img src="img/header_bg.png" class="bg" alt="">
+    <div class="header_block">
+        <a href="main.html" class="logo_black"><img src="img/logo.svg" alt="" /></a>
+        <a href="#header" class="logo_white"><img src="img/logo_white.svg" alt="" /></a>
+        <nav class="navbar">
+            <a href="#" class="navbar_item">Главная</a>
+            <a href="#" class="navbar_item">Авторы</a>
+            <a href="#" class="navbar_item">Произведения</a>
+            <a href="#" class="navbar_item">Новости</a>
+        </nav>
+        <a href="authorization.html" class="login_btn">Вход <img src="img/Arrow.svg" alt=""></a>
+        <a href="registration.html" class="registr_btn">Регистрация <img src="img/Arrow.svg" alt=""></a>
+        <div class="burger"><img src="img/burger.svg" alt=""></div>
+    </div>
+    <img  src="img/header_bg.png" class="bg" alt="">
+    <img  src="img/bg_authoriz.jpg" class="bg2" alt="">
+    <img  src="img/bg768.png" class="bg3" alt="">
+    <img  src="img/bg576.jpg" class="bg4" alt="">
+    
     <div class="form">
 
         <form action="">
@@ -21,11 +48,49 @@
             <input class="login" type="text" placeholder="Логин">
             <input type="text" class="password" placeholder="Пароль">
             <div class="forget_password">Забыли пароль? <a href="#">Восстановление пароля</a></div>
-            <button class="login_btn">Войти</button>
-            <div class="forget_password">Нету аккаунта? <a href="#">Зарегистрироваться</a></div>
+            <button class="login_button">Войти</button>
+            <div class="forget_password">Нету аккаунта? <a href="registration.html">Зарегистрироваться</a></div>
         </form>
     </div>
-    <footer></footer>
+    <footer class="container">
+        <nav class="navbar_">
+            <div class="navbar_column">
+                <a href="author.html" class="navbar__item">Авторы</a>
+                <a href="author.html" class="navbar__item">Популярные авторы</a>
+                <a href="author.html" class="navbar__item">Все авторы</a>
+                <a href="author.html" class="navbar__item">Стать автором</a>
+            </div>
+            <div class="navbar_column">
+                <a href="index_compositions.html" class="navbar__item">Произведения</a>
+                <a href="index_compositions.html" class="navbar__item">Популярные произведения </a>
+                <a href="index_compositions.html" class="navbar__item">Все произведения </a>
+                <a href="index_compositions.html" class="navbar__item">Поделиться произведением</a>
+            </div>
+            <div class="navbar_column">
+                <a href="#new" class="navbar__item">Новости</a>
+                <a href="#new" class="navbar__item">Статистика</a>
+                <a href="#new" class="navbar__item">Выбор редакции</a>
+                <a href="#new" class="navbar__item">История кыргызкой <br> литературы</a>
+            </div>
+            <div class="navbar_column">
+                <a href="#header" class="navbar__item">О нас</a>
+                <a href="#header" class="navbar__item">Войти</a>
+                <a href="#header" class="navbar__item">Зарегистрироваться</a>
+            </div>
+            <a href="politics.html" class="navbar__item">Политика конфиденциальности</a>
+
+
+            <div class="social">
+                <div class="navbar__item div_item">Социальные сети</div>
+                <div class="icons">
+                    <a href="#" class="icon"><img src="img/instagram 1.svg" alt=""></a>
+                    <a href="#" class="icon"><img src="img/youtube 1.svg" alt=""></a>
+                    <a href="#" class="icon"><img src="img/twitter 1.svg" alt=""></a>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

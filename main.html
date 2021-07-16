@@ -6,15 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Chygarma</title>
+    <title>Чыгарма</title>
 </head>
 
 <body>
-    <div class="header_block">
-        <a href="#"><img src="img/logo.svg" alt="" /></a>
+    <div class="burger_menu ">
+        <div class="burger_content">
+            <div class="burger_buttons">
+                <a href="authorization.html" class="login_btn-burger">Вход <img src="img/Arrow.svg" alt=""></a>
+                <a href="registration.html" class="registr_btn-burger">Регистрация </a>
+            </div>
+            <a href="#" class="burger_link">Главная</a>
+            <a href="#" class="burger_link">Авторы</a>
+            <a href="#" class="burger_link">Произведения</a>
+            <a href="#" class="burger_link">Новости</a>
+        </div>
+        <div class="burger_bg burger_close"></div>
     </div>
-    <header class="">
+    <div class="header_block">
+        <a href="#header" class="logo_black"><img src="img/logo.svg" alt="" /></a>
+        <a href="#header" class="logo_white"><img src="img/logo_white.svg" alt="" /></a>
+        <nav class="navbar">
+            <a href="#" class="navbar_item">Главная</a>
+            <a href="#" class="navbar_item">Авторы</a>
+            <a href="#" class="navbar_item">Произведения</a>
+            <a href="#new_sec" class="navbar_item">Новости</a>
+        </nav>
+        <a href="authorization.html" class="login_btn">Вход <img src="img/Arrow.svg" alt=""></a>
+        <a href="registration.html" class="registr_btn">Регистрация <img src="img/Arrow.svg" alt=""></a>
+        <div class="burger"><img src="img/burger.svg" alt=""></div>
+    </div>
+    <div class="header_block_user">
+        <a href="#header" class="logo_black"><img src="img/logo.svg" alt="" /></a>
+        <a href="#header" class="logo_white"><img src="img/logo_white.svg" alt="" /></a>
+        <nav class="navbar">
+            <a href="#" class="navbar_item">Главная</a>
+            <a href="#" class="navbar_item">Авторы</a>
+            <a href="#" class="navbar_item">Произведения</a>
+            <a href="#new" class="navbar_item">Новости</a>
+        </nav>
+        <a href="" class="name_user">Имя Фамилия<img src="img/img_user.svg" alt=""></span></a>
+        <div class="burger"><img src="img/burger.svg" alt=""></div>
+    </div>
+    <header id="header">
         <img class="header_bg" src="img/header_bg.png" alt="" />
+        <img class="header_bg2" src="img/bg768.png" alt="" />
         <div class="main_header">ЧЫГАРМА</div>
         <div class="main_text">
             Кыргызский литературный портал, предоставляющий авторам возможность свободной публикации произведений
@@ -66,22 +102,26 @@
                 <div class="author"></div>
             </div>
         </div>
+
         <div class="texts_composition">
+            <div class="uzor"><img src="img/uzor.svg" alt=""></div>
             <div class="composition_head">Популярные произведения</div>
             <div class="composition_text">
                 Произведения, которые чаще всего оценивали и писали рецензии
             </div>
             <img src="img/atnic_picture.svg" alt="" class="atnic_picture">
-            <a class="watch_composition" href="#">Смотреть все произведения</a>
+            <a class="watch_composition" href="index_compositions.html">Смотреть все произведения</a>
         </div>
     </section>
     <section class="redaction container">
+        
+        <div class="uzor uzor_delete"><img src="img/uzor.svg" alt=""></div>
         <div class="composition_head">Выбор редакции</div>
         <div class="redaction_text">Высоко оценненные работы авторов</div>
         <div class="columns_redaction">
             <div class="redaction_nav_column">
                 <img src="img/atnic_picture.svg" alt="" class="atnic_picture_redaction">
-                <a class="all_composition" href="#">Все произведения</a>
+                <a class="all_composition" href="index_compositions.html">Все произведения</a>
                 <img src="img/atnic_picture.svg" alt="" class="atnic_picture_redaction">
             </div>
             <div class="mini_blocks">
@@ -125,6 +165,7 @@
         </div>
     </section>
     <section class="popular_authors container">
+        <div class="uzor uzor_up"><img src="img/uzor.svg" alt=""></div>
         <div class="authors_heading">Популярные авторы</div>
         <div class="authors_text">Авторы набравшие наибольшее количество оценок и рецензий</div>
         <div class="columns_authors">
@@ -156,22 +197,28 @@
             </div>
             <div class="authors_nav_column">
                 <img src="img/atnic_picture.svg" alt="" class="atnic_picture_author">
-                <a class="all_composition" href="#">Все авторы</a>
+                <a class="all_composition all_authors" href="author.html">Все авторы</a>
                 <img src="img/atnic_picture.svg" alt="" class="atnic_picture_author">
             </div>
     </section>
     <section class="statistics_news container">
         <div class="statistic">
+            
             <div class="statistic_heading">Статистика</div>
+            <div class="uzors uzors1"><img src="img/uzor.svg" alt=""></div>
+
             <div class="publicated_compositions">Количество опубликованных произведений</div>
             <div class="publicated_compositions-number">14 568</div>
+            <div class="uzors uzors2"><img src="img/uzor.svg" alt=""></div>
             <div class="amount_authors">Количество авторов</div>
             <div class="amount_authors-number">14 568</div>
+            <div class="uzors uzors1"><img src="img/uzor.svg" alt=""></div>
+
             <div class="publicated_everyday">Ежедневно <br> публикуется</div>
             <div class="publicated_everyday-number">14 568</div>
         </div>
-        <div class="news">
-            <div class="news_heading">Новости и события</div>
+        <div class="news" id="new_sec">
+            <div class="news_heading" id="new">Новости и события</div>
             <div class="gray_blocks ">
                 <div class="gray_block ">
                     <div class="illustration">Иллюстрации новостей</div>
@@ -213,22 +260,52 @@
         </div>
         <div class="column2">
             <img src="img/atnic_picture.svg" alt="" class="column2_atnick">
-            <div class="history_text">До возникновения киргизской письменности литература киргизов развивалась в форме устного творчества. Существовала традиция устной киргизской народной поэзии, начиная от лирики и заканчивая эпосом. Из киргизских поэтических произведений известны
+            <div class="history_text history_text2">До возникновения киргизской письменности литература киргизов развивалась в форме устного творчества. Существовала традиция устной киргизской народной поэзии, начиная от лирики и заканчивая эпосом. Из киргизских поэтических произведений известны
                 пастушеские («Бекбекей») и любовно-лирические песни («Секетбай», «Кюйгон»), кошок (плачи), пословицы и поговорки, сказки, эпосы («Курманбек», «Кедейхан», «Кожожаш», «Сарынжи-Бокей», «Олджобай и Кишимджан», «Эр-Тештюк», «Жаныл Мырза») и
                 другие[1].
             </div>
         </div>
     </section>
-    <footer>
-        <nav class="navbar">
-            <a href="#" class="navbar__item">О нас</a>
-            <a href="#" class="navbar__item">Авторы</a>
+    <footer class="container">
+        <nav class="navbar_">
+            <div class="navbar_column">
+                <a href="author.html" class="navbar__item">Авторы</a>
+                <a href="author.html" class="navbar__item">Популярные авторы</a>
+                <a href="author.html" class="navbar__item">Все авторы</a>
+                <a href="author.html" class="navbar__item">Стать автором</a>
+            </div>
+            <div class="navbar_column">
+                <a href="index_compositions.html" class="navbar__item">Произведения</a>
+                <a href="index_compositions.html" class="navbar__item">Популярные произведения </a>
+                <a href="index_compositions.html" class="navbar__item">Все произведения </a>
+                <a href="index_compositions.html" class="navbar__item">Поделиться произведением</a>
+            </div>
+            <div class="navbar_column">
+                <a href="#new" class="navbar__item">Новости</a>
+                <a href="#new" class="navbar__item">Статистика</a>
+                <a href="#new" class="navbar__item">Выбор редакции</a>
+                <a href="#new" class="navbar__item">История кыргызкой <br> литературы</a>
+            </div>
+            <div class="navbar_column">
+                <a href="#header" class="navbar__item">О нас</a>
+                <a href="#header" class="navbar__item">Войти</a>
+                <a href="#header" class="navbar__item">Зарегистрироваться</a>
+            </div>
             <a href="politics.html" class="navbar__item">Политика конфиденциальности</a>
-            <a href="index_compositions.html" class="navbar__item">Произведения</a>
-            <a href="#" class="navbar__item">Новости</a>
-            <a href="#" class="navbar__item">Социальные сети</a>
+
+
+            <div class="social">
+                <div class="navbar__item div_item">Социальные сети</div>
+                <div class="icons">
+                    <a href="#" class="icon"><img src="img/instagram 1.svg" alt=""></a>
+                    <a href="#" class="icon"><img src="img/youtube 1.svg" alt=""></a>
+                    <a href="#" class="icon"><img src="img/twitter 1.svg" alt=""></a>
+                </div>
+            </div>
         </nav>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

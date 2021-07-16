@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Underdog", cursive;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 1600px;
+  width: 100%;
+  height: 100px;
+  background: #ddab5f;
+}
+
+.title__text {
+  margin-top: 80px;
+  font-size: 64px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.title__span {
+  font-size: 48px;
+}
+
+.poem {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.poem__texts {
+  width: 30%;
+}
+.poem__text-title {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.poem__text {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 100%;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.poem__block {
+  width: 700px;
+  height: 576px;
+  background: #c4c4c4;
+  font-size: 48px;
+  color: #000000;
+}
+
+.poem__block-p {
+  margin-top: 35%;
+  margin-left: 30%;
+}
+
+.poem__like {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.poem__like-quantity {
+  font-size: 34px;
+  margin-left: 20px;
+}
+
+.comments__title {
+  display: flex;
+  align-items: center;
+}
+
+.comments {
+  margin-top: 100px;
+}
+.comments__title {
+  font-size: 48px;
+}
+.comments__span {
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #000000;
+  margin-left: 50px;
+}
+.comments__blocks {
+  margin-top: 60px;
+  display: flex;
+}
+.comments__block {
+  width: 350px;
+  height: 222.25px;
+  background: #f5e2cf;
+  border: 3px solid #000000;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.commets__block-p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.comments__block-span {
+  font-size: 24px;
+  margin-left: 66px;
+}
+
+.comments__arrows {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.comments__arrow {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.comments__arrow-right {
+  transform: rotate(180deg);
+  margin-left: 30px;
+}
+
+.footer {
+    margin-top: 150px;
+  width: 1600px;
+  width: 100%;
+  height: 484px;
+  background: #ddab5f;
+}
