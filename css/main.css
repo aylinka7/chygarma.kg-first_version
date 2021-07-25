@@ -430,6 +430,7 @@ header {
 
 .popular_authors {
     margin-top: 80px;
+    position: relative;
 }
 
 .authors_heading {
@@ -665,6 +666,23 @@ footer {
 .icon {
     margin-left: 26px;
 }
+@media (min-width: 1601px) and (max-width: 1920px) {
+    .main_header {
+        font-size: 144px;
+        top: 40vh;
+    }
+    .main_text {
+        font-size: 36px;
+        top: 660px;
+    }
+    .main_language {
+        top: 960px;
+    }
+    .atnic_picture {
+        top: 20vh;
+        width: 20%;
+    }
+}
 @media (min-width: 1400px) and (max-width: 1600px) {
     .main_header {
         font-size: 144px;
@@ -679,6 +697,7 @@ footer {
     }
     .atnic_picture {
         top: 40vh;
+        width: 20%;
     }
 }
 @media (max-width: 1200px) {
@@ -734,6 +753,7 @@ footer {
         font-size: 23px;
         top: 520px;
     }
+    
     .mini_block {
         width: 260px;
         height: 260px;
@@ -812,6 +832,9 @@ footer {
         height: 48px;
         padding: 16px 16px;
     }
+    .uzor_up {
+        right: 7%;
+    }
     .login_btn img,
     .registr_btn img {
         margin-left: 6px;
@@ -873,7 +896,7 @@ footer {
         font-size: 16px;
         line-height: 16px;
         text-align: right;
-        /* margin-left: 0; */
+        /* margin-left: 470px; */
         width: 200px;
     }
     .watch_composition {
@@ -892,7 +915,12 @@ footer {
         width: 220px;
         height: 260px;
     }
-
+    .mini_block:nth-child(3){
+        background: rgba(245, 226, 207, 1);
+    }
+    .mini_block:nth-child(4){
+        background: rgba(221, 171, 95, 1);
+    }
     .all_composition {
         text-align: center;
         margin-top: 0;
@@ -911,7 +939,7 @@ footer {
 
     .all_authors {
         position: absolute;
-        top: 444vh;
+        top: 700px;
         left: 38%;
     }
     .atnic_picture_author {
@@ -1105,6 +1133,10 @@ footer {
     }
     .uzor {
         display: flex;
+        top: 50px;
+    }
+    .uzor img{
+        width: 60%;
     }
     .composition_text {
         font-size: 16px;
@@ -1154,7 +1186,7 @@ footer {
     }
     .all_authors {
         position: absolute;
-        top: 462vh;
+        top: 700px;
         left: 38%;
     }
     .atnic_picture_author {
@@ -1261,6 +1293,12 @@ footer {
     footer {
         position: relative;
     }
+    .uzor_delete{
+        top: -30px;
+    } 
+    .redaction{
+        position: relative;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1345,7 +1383,7 @@ footer {
         margin-left: 60px;
     }
     .uzor{
-        top: -8vh;
+        top: -5vh;
     }
     .redaction{
         position: relative;
@@ -1362,7 +1400,7 @@ footer {
     }
     .watch_composition {
         font-size: 12px;
-        top: 84vh;
+        top: 530px;
         left: -28%;
     }
     .mini_block:nth-child(3){
@@ -1428,7 +1466,7 @@ footer {
     }
     .all_authors{
         position: absolute;
-        top: 360px;
+        top: 840px;
         left: -280px;
     }
     .column_avatar {

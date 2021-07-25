@@ -322,11 +322,25 @@ footer {
 .icon {
     margin-left: 26px;
 }
-@media(max-width: 1600px) and (min-width: 1400px){
-    .form_checkin{
+@media(max-width: 1920px) and (min-width: 1600px){
+    /* .form_checkin{
         top: -93vh;
         left: 30vw;
+    } */
+    .form{
+        top: 260px;
+        left: 5%;
     }
+}
+
+
+@media(max-width: 1600px){
+    
+    .form_checkin{
+        top: -105vh;
+        left: 25vw;
+    }
+    
 }
 @media(max-width: 1200px) {
     .navbar_item {
@@ -342,7 +356,7 @@ footer {
         top: -86vh;
     }
     .form_checkin {
-        left: 18%;
+        left: 23%;
         top: -91vh;
         padding: 30px 40px;
     }
