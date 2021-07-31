@@ -341,17 +341,24 @@ nav {
     font-size: 36px;
     margin-top: 14px;
     font-family: Underdog;
+    display: inline-block;
+    color: #000000;
 }
 
 .data_composition {
     font-size: 18px;
     margin-top: 12px;
+    font-family: Underdog;
+
 }
 
 .author {
     font-size: 24px;
     margin-top: 68px;
     margin-left: -37px;
+    font-family: Underdog;
+    display: inline-block;
+    color: #000000;
 }
 
 .nav_column {

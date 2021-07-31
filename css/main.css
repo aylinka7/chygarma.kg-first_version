@@ -291,24 +291,24 @@ header {
 
 .about_composition {
     margin-left: 35px;
+    margin-top: 10px;
 }
 
 .heading_composition {
     font-size: 26px;
-    margin-top: 20px;
-    font-family: Ruslan Display;
+    color: #000000;
 }
 
 .data_composition {
     font-size: 14px;
-    font-family: Ruslan Display;
+    margin-top: 10px;
 }
 
 .author {
     font-size: 20px;
     margin-top: 60px;
     margin-left: -10px;
-    font-family: Ruslan Display;
+    color: #000;
 }
 
 .popular_composition {
@@ -405,27 +405,31 @@ header {
 }
 
 .mini_block_heading {
-    font-family: Ruslan Display;
     text-transform: uppercase;
     font-size: 24px;
     margin-left: 20px;
     margin-top: 24px;
+    display: inline-block;
+    color: #000000;
+
 }
 
 .mini_block_author {
-    font-family: Ruslan Display;
     text-transform: uppercase;
     font-size: 18px;
     margin-left: 20px;
     margin-top: 14px;
+    display: inline-block;
+    color: #000000;
 }
 
 .mini_block_type {
-    font-family: Ruslan Display;
     font-size: 18px;
     text-transform: uppercase;
     margin-left: 20px;
     margin-top: 10px;
+    display: inline-block;
+
 }
 
 .popular_authors {
@@ -575,6 +579,12 @@ header {
     width: 300px;
     height: 250px;
     background: #c4c4c4;
+    border-radius: 20px;
+}
+.gray_block img{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
 }
 .uzors {
     margin-left: 10vw;
@@ -992,7 +1002,7 @@ footer {
         margin-left: 20px;
     }
     .gray_block {
-        max-width: 318px;
+        max-width: 300px;
         width: 100%;
         height: 290px;
         border-radius: 20px;
@@ -1242,6 +1252,10 @@ footer {
         width: 100%;
         height: 290px;
         border-radius: 20px;
+    }
+    .gray_block img{
+        width: 250px;
+        height: auto;
     }
     .title {
         margin-top: 20px;
@@ -1503,9 +1517,13 @@ footer {
         margin-left: -30vw;
     }
     .gray_block{
-        max-width: 130px;
+        max-width: 200px;
         width: 100%;
-        height: 120px;
+        height: 200px;
+    }
+    .gray_block img{
+        width: 200px;
+        height: auto;
     }
     .uzors img{
         width: 70%;
@@ -1517,14 +1535,15 @@ footer {
     }
 
     .title{
-        font-size: 14px;
+        font-size: 18px;
         margin-left: 10px;
         margin-top: 6px;
     }
     .text{
-        font-size: 8px;
+        font-size: 11px;
         margin-left: 10px;
         line-height: 96%;
+        margin-top: 6px;
     }
 
     .history_text {
